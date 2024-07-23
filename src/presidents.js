@@ -435,13 +435,11 @@ function getDemocraticPresidents(presidentsArr) {
 
 // Iteration 3 | Count Years in Office - reduce()
 function countYearsInOffice(presidentsArr) {
-
   const countingYears = presidentsArr
     .filter((personObj) => personObj.leftOffice !== null)
     .reduce((acc, currentValue) => { return acc + (currentValue.leftOffice - currentValue.tookOffice) }, 0);
   return countingYears;
 }
-
 
 // Iteration 4 | Sort Presidents by Birth Year - `sort()`
 function sortPresidentsByBirthYear(presidentsArr) { 
